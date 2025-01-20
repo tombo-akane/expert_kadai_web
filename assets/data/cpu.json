@@ -1,0 +1,27 @@
+{
+  "AMD Ryzen 9 9950X" : {
+    "cost": 108480,
+    "performance": 66508,
+    "max_ram_gb": 128
+  },
+  "AMD Ryzen 9 9900X" : {
+    "cost": 71581,
+    "performance": 54830,
+    "max_ram_gb": 128
+  },
+  "AMD Ryzen 7 9800X3D" : {
+    "cost": 115768,
+    "performance": 40058,
+    "max_ram_gb": 128
+  },
+  "AMD Ryzen 7 9700X" : {
+    "cost": 57979,
+    "performance": 37138,
+    "max_ram_gb": 128
+  },
+  "AMD Ryzen 5 9600X" : {
+    "cost": 40915,
+    "performance": 30157,
+    "max_ram_gb": 128
+  }
+}

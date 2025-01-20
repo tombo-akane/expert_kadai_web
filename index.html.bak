@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自作PC作りを全力で応援するサイト（※応援と書いて妨害と読みます）</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+      <div class="headerInner">
+        <h1 class="headerLogo">
+          <a href="">
+            <img src="assets/img/logo.png" height="100" alt="さんぷるぺーじ" srcset="">
+          </a>
+        </h1>
+        <nav class="headerNav">
+          <ul class="headerList">
+            <li class="headerList_description">作りかけです。</li>
+            <li class="headerList_gitHub"><a href="https://github.com/tombo-akane/expert_kadai_web">GitHubのリポジトリはこちら</a></li>
+            <li class="headerList_contact"><a href="#mailgo" data-address="akane26.fortle" data-domain="gmail.com">Contact (mailtoが置きたかっただけ)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <main>
+      <div class="mainInner">
+        <article>
+          <section class="contents">
+              <h1 class="contents_title">目次</h1>
+              <ol class="contents_list">
+                  <li><a href="#selfIntroduction">自己紹介</a></li>
+                  <li><a href="#languages">使用言語</a></li>
+              </ol>
+              <ul>
+                <li><a href="#changelog">更新履歴</a></li>
+              </ul>
+          </section>
+          <section class="mainInner_main">
+            <h2 id="selfIntroduction" class="textTitle">About me</h2>
+              <div class="text">
+                <p>まだ何者にもなっていませんが、名を「あかね」と申します。</p>
+                <p>なんの面白みもなく自堕落な毎日を生きています。きっと。</p>
+              </div>
+            <h2 id="languages" class="textTitle">Languages</h2>
+            <p>HTML, css, JavaScript, Java …らへんを触っています。大したことはできません。</p>
+          </section>
+          <section class="changeLog" class="text">
+            <h3>ChangeLog</h3>
+            <p>いつかちゃんとMarkdownが効くようにしておきます。いつか。</p>
+            <iframe src="CHANGELOG.md" id="changelog" frameborder="1"></iframe>
+          </section>
+        </article>
+      </div>
+    </main>
+  
+    <footer>
+      <div class="footerInner">
+        <small>&copy; <a href="https://github.com/tombo-akane">tombo-akane</a> 2025</small>
+      </div>
+    </footer>
+    <script src="assets/js/mailgo.min.js"></script>
+  </body>
+</html>
