@@ -23,6 +23,7 @@
 - CPUの価格については、2025年1月20日16時の時点で[こちら](<https://kakaku.com/pc/cpu/itemlist.aspx?pdf_ma=7&pdf_se=30&pdf_Spec103=106>)を参照しお借りしました。
 - GPUの価格については、2025年1月22日14時の時点で[こちら](<https://kakaku.com/pc/videocard/itemlist.aspx?pdf_Spec101=1>)を参照しお借りしました。
   - 各搭載チップで絞り込んだのちに「売れ筋・高い順」で最も上位にあるものの価格を採用しています。
+  - ただし、RTX 4090のみ、[公式サイト](<https://www.nvidia.com/ja-jp/geforce/graphics-cards/40-series/rtx-4090/>)を参照しています。
 
 
 

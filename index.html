@@ -45,7 +45,7 @@
           <section class="mb-5">
             <div class="d-flex align-items-center">
               <h2 class="h4 mb-2">ご予算</h2>
-              <p class="fs-6 text-muted ms-3 mb-2">（単位: 十万円）</p>
+              <p class="fs-6 text-muted ms-3 mb-2">（単位: 万円）</p>
             </div>
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnGroupBudget" id="btnRadio1" autocomplete="off" checked="">
@@ -93,6 +93,10 @@
                 <input class="form-check-input" type="radio" name="chooseOS" id="chooseOS3" checked="">
                 <label class="form-check-label" for="chooseOS3">Xubuntu 24.04</label>
               </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="chooseOS" id="chooseOS4">
+                <label class="form-check-label" for="chooseOS4">elementary OS 8 Circe</label>
+              </div>
           </section>
           <section class="mb-5">
             <h2 class="h4">ご希望のCPU</h3>
@@ -128,22 +132,25 @@
             <h2 class="h4">ご希望のRAM容量</h3>
               <select class="form-select" aria-label="RAM capacity">
                 <option selected="">Choose one</option>
-                <option value="1">64KiB</option>
-                <option value="2">16GiB</option>
-                <option value="3">32GiB</option>
-                <option value="4">64GiB</option>
-                <option value="5">128GiB</option>
-                <option value="6">192GiB</option>
+                <option value="64KiB">64KiB</option>
+                <option value="16GiB">16GiB</option>
+                <option value="32GiB">32GiB</option>
+                <option value="64GiB">64GiB</option>
+                <option value="128GiB">128GiB</option>
+                <option value="192GiB">192GiB</option>
               </select>
           </section>
       </div>
       <div class="text-center"></div>
-        <button type="button" class="btn btn-primary btn-lg mb-5">覚悟を決める</button>
+        <button type="button" id="decision" class="btn btn-primary btn-lg mb-5">覚悟を決める</button>
       </div>
     </div>
+
+    <div id="result" class="mb-5"></div>
+
     <section class="mb-5">
       <h2 class="h4">ChangeLog</h3>
-      <p>いつかちゃんとMarkdownが効くようにしておきます。いつか。</p>
+      <p>いつか書きます。いつか。</p>
     </section>
   </main>
 
