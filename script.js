@@ -1,10 +1,9 @@
-// 作者の極めて偏った思想を反映.
-
 document.addEventListener('DOMContentLoaded', function() {
     const chooseCPU1 = document.getElementById('chooseCPU1');
     const chooseCPU2 = document.getElementById('chooseCPU2');
     const chooseCPU3 = document.getElementById('chooseCPU3');
 
+    // サイト作者はAMD派なので.
     chooseCPU1.addEventListener('change', function() {
         if (chooseCPU1.checked) {
             alert('サイト作者の極めて偏った思想により、Intel製CPUを選択することはできません。');
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // 全部リストアップするの単純にめんどかった.
     chooseCPU2.addEventListener('change', function() {
         if (chooseCPU2.checked) {
             alert('サイト作者がAMD製のCPUを全てリストアップすることを面倒くさがったため、CPUはRyzen 9000 Seriesしか選択できません。');
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const chooseGPU2 = document.getElementById('chooseGPU2');
     const chooseGPU3 = document.getElementById('chooseGPU3');
 
+    // 全部リストアップするの（ｒｙ.
     chooseGPU2.addEventListener('change', function() {
         if (chooseGPU2.checked) {
             alert('サイト作者がNVIDIA GeForce Seriesの全てのGPUをリストアップすることを面倒くさがったため、GPUはRTX 4000 Seriesしか選択できません。');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // サイト作成者はNVIDIA派なので.
     chooseGPU3.addEventListener('change', function() {
         if (chooseGPU3.checked) {
             alert('サイト作者の極めて偏った思想により、AMD Radeon Seriesを選択することはできません。');
@@ -37,17 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // 覚悟を決めたら実行.
     const decision = document.getElementById('decision');
     decision.addEventListener('click', async function() {
         const budget = parseInt(document.querySelector('input[name="btnGroupBudget"]:checked').nextElementSibling.textContent.trim()) * 10000;
         const osName = document.querySelector('input[name="chooseOS"]:checked').nextElementSibling.textContent.trim();
         const ram = document.querySelector('.form-select').value;
 
+        // 選べや（ただしRAM容量は計算には一切影響しない）.
         if (ram === 'Choose one') {
             alert('RAM容量を選択してください。');
             return;
         }
 
+        // キミ、64KiBがいいんだね！それならこれしかないよね！！.
         if (ram === '64KiB') {
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `
@@ -69,18 +74,21 @@ document.addEventListener('DOMContentLoaded', function() {
         let selectedCPU = null;
         let selectedGPU = null;
 
+        // 脳筋計算その1.
         for (const details of Object.values(cpuData)) {
             if (details.cost <= budget && (!selectedCPU || details.performance > selectedCPU.performance)) {
                 selectedCPU = details;
             }
         }
 
+        // 脳筋計算その2.
         for (const details of Object.values(gpuData)) {
             if (details.cost <= budget && (!selectedGPU || details.performance > selectedGPU.performance)) {
                 selectedGPU = details;
             }
         }
 
+        // 脳筋計算その3（予算オーバーの場合の調整処理・雑オブ雑）.
         while (selectedCPU.cost + selectedGPU.cost + selectedOS.cost > budget) {
             let newSelectedGPU = null;
             for (const details of Object.values(gpuData)) {
@@ -105,10 +113,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
+        // 余剰金の計算. ただし結局考慮しているのはCPUとGPUだけなので全くアテにならない.
         const remainingBudget = budget - (selectedCPU.cost + selectedGPU.cost + selectedOS.cost);
 
+        // 金額が見づらかったのでカンマ区切りにする.
         const formatPrice = (price) => price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
+        // 結果表示（ゴリ押し）.
         const resultDiv = document.getElementById('result');
         resultDiv.innerHTML = `
             <h2 class="h2 mb-2">あなたにおすすめのパーツリスト</h2>
