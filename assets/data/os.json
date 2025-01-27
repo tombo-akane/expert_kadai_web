@@ -1,0 +1,12 @@
+{
+  "Xubuntu 24.04": {
+    "name": "Xubuntu 24.04",
+    "cost": 0,
+    "dl_url": "https://xubuntu.org/download/#lts"
+  },
+  "elementary OS 8": {
+    "name": "elementary OS 8",
+    "cost": 0,
+    "dl_url": "https://elementary.io/ja/"
+  }
+}

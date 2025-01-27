@@ -1,27 +1,37 @@
 {
   "AMD Ryzen 9 9950X" : {
+    "name": "AMD Ryzen 9 9950X",
     "cost": 108480,
     "performance": 66508,
-    "max_ram_gb": 192
+    "max_ram_gb": 192,
+    "buy_url": "https://amzn.asia/d/0eadw8U"
   },
   "AMD Ryzen 9 9900X" : {
+    "name": "AMD Ryzen 9 9900X",
     "cost": 71581,
     "performance": 54830,
-    "max_ram_gb": 192
+    "max_ram_gb": 192,
+    "buy_url": "https://amzn.asia/d/fejSOfa"
   },
   "AMD Ryzen 7 9800X3D" : {
+    "name": "AMD Ryzen 7 9800X3D",
     "cost": 115768,
     "performance": 40058,
-    "max_ram_gb": 192
+    "max_ram_gb": 192,
+    "buy_url": "https://amzn.asia/d/9JmNULD"
   },
   "AMD Ryzen 7 9700X" : {
+    "name": "AMD Ryzen 7 9700X",
     "cost": 57979,
     "performance": 37138,
-    "max_ram_gb": 192
+    "max_ram_gb": 192,
+    "buy_url": "https://amzn.asia/d/85KZA6X"
   },
   "AMD Ryzen 5 9600X" : {
+    "name": "AMD Ryzen 5 9600X",
     "cost": 40915,
     "performance": 30157,
-    "max_ram_gb": 192
+    "max_ram_gb": 192,
+    "buy_url": "https://amzn.asia/d/ePludLi"
   }
 }

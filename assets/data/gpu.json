@@ -1,41 +1,51 @@
 {
   "NVIDIA GeForce RTX 4090" : {
+    "name": "NVIDIA GeForce RTX 4090",
     "cost": 298000,
     "performance": 38449
   },
   "NVIDIA GeForce RTX 4080 Super" : {
+    "name": "NVIDIA GeForce RTX 4080 Super",
     "cost": 172800,
     "performance": 34220
   },
   "NVIDIA GeForce RTX 4080" : {
+    "name": "NVIDIA GeForce RTX 4080",
     "cost": 182800,
     "performance": 34597
   },
   "NVIDIA GeForce RTX 4070 Ti Super" : {
+    "name": "NVIDIA GeForce RTX 4070 Ti Super",
     "cost": 142800,
     "performance": 31760
   },
   "NVIDIA GeForce RTX 4070 Ti" : {
+    "name": "NVIDIA GeForce RTX 4070 Ti",
     "cost": 132689,
     "performance": 31777
   },
   "NVIDIA GeForce RTX 4070 Super" : {
+    "name": "NVIDIA GeForce RTX 4070 Super",
     "cost": 109980,
     "performance": 30035
   },
   "NVIDIA GeForce RTX 4070" : {
+    "name": "NVIDIA GeForce RTX 4070",
     "cost": 94420,
     "performance": 26948
   },
   "NVIDIA GeForce RTX 4060 Ti (16GB)" : {
+    "name": "NVIDIA GeForce RTX 4060 Ti (16GB)",
     "cost": 79800,
     "performance": 22837
   },
   "NVIDIA GeForce RTX 4060 Ti" : {
+    "name": "NVIDIA GeForce RTX 4060 Ti",
     "cost": 58980,
     "performance": 22812
   },
   "NVIDIA GeForce RTX 4060" : {
+    "name": "NVIDIA GeForce RTX 4060",
     "cost": 43880,
     "performance": 19808
   }
